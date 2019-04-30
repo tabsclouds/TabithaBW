@@ -1,1 +1,6 @@
 tabithabw.co.uk
+$ dig www.tabithabw.co.uk +nostats +nocomments +nocmd
+> ;www.tabithabw.co.uk.                 IN      A
+> www.tabithabw.co.uk.          3592    IN      CNAME   tabsclouds.github.io/TabithaBW/.
+> tabsclouds.github.io/TabithaBW/.      43192   IN      CNAME   < GITHUB-PAGES-SERVER >.
+> < GITHUB-PAGES-SERVER >.      22      IN      A       185.199.111.153
