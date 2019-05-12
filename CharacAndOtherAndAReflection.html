@@ -20,28 +20,6 @@
 * {
   box-sizing: border-box;
 }
-
-/* Create two unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-.left {
-  width: 65%;
-}
-
-.right {
-  width: 35%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 img {
   max-width: 100%;
   height: auto;
@@ -87,8 +65,13 @@ a:active {
 <h2 style="font-family:arial">Charac and Other and a Reflection. [2018-2019]</h2>
 <p style="font-family:arial"><a href="https://vimeo.com/315662457">Vimeo Link</a></p>
 
-<div class="row">
-  <div class="column left" style="background-color:transparent;">
+  <div>
+<p style="font-family:arial">Resize the browser window to see the effect:</p>
+
+  </div>
+
+<div>
+  <div>
   <div class="videoWrapper">
   <iframe src="https://player.vimeo.com/video/335500869" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
@@ -97,10 +80,6 @@ a:active {
     </div>
   
 <img src="CharacAndOtherAndAReflection(still).png" alt="Charac and Other and a Reflection (still)" width="1000" height="300">
-  </div>
-  <div class="column right" style="background-color:transparent;">
-<p style="font-family:arial">Resize the browser window to see the effect:</p>
-
   </div>
 </div>
 
