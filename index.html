@@ -13,41 +13,15 @@
   color: white;
   padding: 5px;
 }
-.split {
-  height: 90%;
-  width: 50%;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 5px;
-  padding-left: 0px;
-}
-.left {
-  left: 20px;
-  top: 50px;
-  width: 50%;
-  background-color:;
-}
-.right {
-  right: 20px;
-    top: 50px;
-    width: 50%;
-  background-color: ;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-} 
-   img {
+  img {
   max-width: 100%;
   height: auto;
   padding-bottom: 0px; 
-  padding-left: 10px; 
 	padding-top: 5px;
+}
+.column {
+  float: left;
+  padding: 5px;
 }
 .clearfix::after {
   content: "";
@@ -55,7 +29,7 @@
   display: table;
 }
 .menu {
-  width: 90%;
+  width: 50%;
 }
 .content {
   width: 50%;
@@ -66,7 +40,7 @@
   padding: 10px;
 }
 .menu li {
-  padding: 10px;
+  padding: 8px;
   margin-bottom: 8px;
   background-color: #6cb869;
   color: #ffffff;
@@ -102,7 +76,7 @@ a:active {
   <h1></h1>
 </div>
 
-<div class="split left">
+<div class="clearfix">
   <div class="column menu">
     <ul>
       <li style="font-family:optima;font-size:25px"><a href="ExplorationHowToHoldDigitalImages.html">An exploration of how to hold and touch digital images. [2018-2019]</a></li>
@@ -116,8 +90,8 @@ a:active {
     </ul>
   </div>
 
-  <div class="split right">
-    <h2 style="font-family:optima; color:white; font-size:45px"> &nbsp; Tabitha Beresford-Webb</h2>
+  <div class="column content">
+    <h2 style="font-family:optima; color:white; font-size:45px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tabitha Beresford-Webb</h2>
   <img src="Final Degree Show Installation Camberwell for Website small copy.jpg" alt="Degree Show Installation Camberwell" width="454" height="627">
   </div>
 </div>
