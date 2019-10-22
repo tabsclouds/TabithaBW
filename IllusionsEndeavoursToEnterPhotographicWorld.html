@@ -16,7 +16,6 @@
   font-size: 16px;
   cursor: pointer;
 }
-
 /* Darker background on mouse-over */
 .btn:hover {
   background-color: #9ace97;
@@ -37,7 +36,6 @@
 * {
   box-sizing: border-box;
 }
-
 img {
   max-width: 100%;
   height: auto;
@@ -47,7 +45,6 @@ img {
 * {
   box-sizing: border-box;
 }
-
 .header, .footer {
   background-color: #6cb869;
   color: white;
@@ -73,6 +70,23 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 </head>
 <body>
@@ -80,15 +94,22 @@ a:active {
 <a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
 </div>
 
-<h2 style="font-family:arial">The illusions, delusions and endeavours to enter the photographic world. [2017-2018]</h2>
-<h8 style="font-family:arial"><a href="https://vimeo.com/252046144">Vimeo Link</a></h8>
+<h2 style="font-family:optima">The illusions, delusions and endeavours to enter the photographic world. [2017-2018]</h2>
+
+  </div>
+
+<div class="column">
+
+<h8 style="font-family:optima"><a href="https://vimeo.com/252046144">Vimeo Link</a></h8>
 
   <div>
-    <p style="font-family:arial"></p>
+    <p style="font-family:optima"></p>
   </div>
   
-<div>
-  <div>
+  <img src="IllusionsEndeavoursToEnterPhotographicWorld(still).png" alt="The illusions, delusions and endeavours to enter the photographic world. (still)" width="1000" height="300">
+  </div>
+    
+<div class="column">
   <div class="videoWrapper">
   <iframe src="https://player.vimeo.com/video/335498576" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
@@ -99,11 +120,6 @@ a:active {
   <iframe src="https://player.vimeo.com/video/252046144" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
   
-<img src="IllusionsEndeavoursToEnterPhotographicWorld(still).png" alt="The illusions, delusions and endeavours to enter the photographic world. (still)" width="1000" height="300">
-  </div>
-
-</div>
-
 
 </body>
 </html>
