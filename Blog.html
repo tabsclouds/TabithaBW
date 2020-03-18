@@ -157,6 +157,17 @@ body {
   background-color: #6cb869;
   color: #fff;
 }
+p.test1 {
+  writing-mode: horizontal-tb; 
+}
+
+span.test2 {
+  writing-mode: vertical-rl; 
+}
+
+p.test2 {
+  writing-mode: vertical-rl; 
+}
 </style>
 <script>
 function allowDrop(ev) {
@@ -186,6 +197,7 @@ function drop(ev) {
       <a href="#M1">Entry 1 17th</a>
       <a href="#M2">Entry 2 18th</a>
       <a href="#M3">Entry 3 18th</a>
+      <a href="#M4">Entry 4 18th</a>
     </div>
   </li2>
   <li2 class="dropdown">
@@ -212,7 +224,16 @@ function drop(ev) {
     <h2> &nbsp;&nbsp; Blog 2020</h2>
     
     
-    
+    <div class="card">
+     <p5 id="M4"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* 3rd Entry - 18th March 2020 */</p5>
+     <h1>The writing-mode Property</h1>
+
+<p class="test1">Some text with default writing-mode.</p>
+
+<p>Some text with a span element with a <span class="test2">vertical-rl</span> writing-mode.</p>
+
+<p class="test2">Some text with writing-mode: vertical-rl.</p>
+     </div>
     
     
     <div class="card">
