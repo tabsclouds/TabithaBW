@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-	 <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+<head> <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>The illusions, delusions and endeavours to enter the digital photographic world.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>The illusions, delusions and endeavours to enter the digital photographic world.</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -20,27 +19,18 @@
 .btn:hover {
   background-color: #9ace97;
 }
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 * {
   box-sizing: border-box;
 }
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   padding-bottom: 10px; 
 	padding-top: 10px;
+}
+iframe{
+max-width: 100%;
+max-height: auto;
 }
 * {
   box-sizing: border-box;
@@ -72,18 +62,20 @@ a:active {
 }
 * {
   box-sizing: border-box;
+  }
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
 }
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #6cb869;
+  color: #fff;
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -91,7 +83,6 @@ a:active {
     width: 100%;
   }
 </style>
-</head>
 <body>
 <div class="header">
 <a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
@@ -108,17 +99,67 @@ a:active {
   </div>
   </div>
 
-<div class="column">
-  <div class="videoWrapper">
-  <iframe src="https://player.vimeo.com/video/335496680" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<div class=column id="mydiv">
+  <div class=column style="font-family:optima" id="mydivheader">Click here to move</div>
+  <div class=column class="videoWrapper">
+<iframe class=column src="https://player.vimeo.com/video/335496680" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
-	   <div>
+</div>
+
+<div class="column">
+<h8 style="font-family:optima"><a href="https://player.vimeo.com/video/269202807">Vimeo  Link to full video</a></h8>
+
+<div>
 		  <p style="font-family:arial"> Email <a href="mailto:tabithabw5@gmail.com">tabithabw5@gmail.com</a> for password. </p>
 	  </div>
-   <div class="videoWrapper">
- <iframe src="https://player.vimeo.com/video/269202807" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
+      
+      
 
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("mydiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
 
 </body>
 </html>
