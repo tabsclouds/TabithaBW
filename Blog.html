@@ -57,40 +57,28 @@ a:active {
 * {
   box-sizing: border-box;
 }
-/* Create two equal columns that floats next to each other */
-.column {
+body {
+  font-family: Optima;
+  padding: 0px;
+  background: white;
+}
+.leftcolumn {   
   float: left;
-  width: 50%;
-  padding: 5px;
+  width: 100%;
 }
-.left {
-  width: 40%;
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 15px;
+   margin-top: 0px;
 }
-.right {
-  width: 60%;
-}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: table;
+  display: ;
   clear: both;
 }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-</style>
-</head>
-<body>
-<div class="header">
-<a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
-</div>
-<h2 style="font-family:optima">Blog 2020</h2>
-<div class="column left">
-
-/* Entry - 18th March 2020 */
-<style>
 #div1, #div2 {
   float: left;
   width: 255px;
@@ -117,20 +105,31 @@ function drop(ev) {
 </script>
 </head>
 <body>
-
-<h2>Drag and Drop</h2>
+<div class="header">
+<a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
+</div>
+<div class="column left">
+<div class="row">
+  <div class="leftcolumn">
+    <h2>Blog 2020</h2>
+    <div class="card">
+      
+      <h2>Drag and Drop</h2>
 <p>Drag the image back and forth between the two div elements.</p>
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <img src="img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="108" height="131">
+  <img src="CharacSmileHead.png" draggable="true" ondragstart="drag(event)" id="drag1" width="108" height="131">
 </div>
 
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-</body>
-</html>
-
-/* Entry - 17th March 2020 */
+      
+      
+      
+    </div>
+    </div>
+    </div>
+    <div class="card">
+      <p5 style="font-family:optima;font-color:#6cb869">/* Entry - 17th March 2020 */</p5>
 
 <p style="font-family:optima;font-size:12px;">Things to Plan</p>
    <p style="font-family:optima;font-size:12px;">Things I/m thinking about:</p>
@@ -144,13 +143,12 @@ function drop(ev) {
   <ul style="list-style-type:circle;">
   <li style="font-family:optima;font-size:12px;">still interested in light and reflections</li>
 </ul>  
-<div>
+    </div>
+  </div>
 
 
-   </div>
-</style>
-</head>
-<body>
+</body>
+
 <div class="footer">
   <p></p>
 </div>
