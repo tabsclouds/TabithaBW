@@ -2,12 +2,11 @@
 <html>
 <head>
    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>An exploration of how to hold and touch digital images.</title>
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-
 .btn {
   background-color: #6cb869;
   border: none;
@@ -65,10 +64,10 @@ a:active {
   padding: 5px;
 }
 .left {
-  width: 40%;
+  width: 50%;
 }
 .right {
-  width: 60%;
+  width: 50%;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -106,7 +105,7 @@ img {vertical-align: middle;}
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 30px 30px 0;
   user-select: none;
 }
 
@@ -175,24 +174,24 @@ img {vertical-align: middle;}
   <li style="font-family:optima;font-size:12px;">Cat and Information [January 2019 - April 2019] - (Video and audio, 9min53sec)</li>
 </ul>  
    </div>
-   <div class="slideshow-container">
+<div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="Final Degree Show Installation Camberwell 035.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+
+  <img src="Final Degree Show Installation Camberwell 035.jpg" style="width:712px">
+  
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="Final Degree Show Installation Camberwell 205.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+
+  <img src="Final Degree Show Installation Camberwell 205.jpg" style="width:712px">
+ 
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="Final Degree Show Installation Camberwell 108.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+  
+  <img src="Final Degree Show Installation Camberwell 108.jpg" style="width:712px">
+  
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -206,6 +205,7 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
+
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -234,7 +234,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-
 <body>
 <div class="footer">
   <p></p>
