@@ -3,7 +3,7 @@
 <head>
    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>An exploration of how to hold and touch digital images.</title>
+  <title>Blog</title>
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -86,21 +86,66 @@ a:active {
 <div class="header">
 <a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
 </div>
-<h2 style="font-family:optima">Blog</h2>
+<h2 style="font-family:optima">Blog 2020</h2>
 <div class="column left">
-<p style="font-family:optima;font-size:12px;">Things to plan</p>
-   <p style="font-family:optima;font-size:12px;">things im thinking about</p>
+
+/* Entry - 18th March 2020 */
+<style>
+#div1, #div2 {
+  float: left;
+  width: 255px;
+  height: 255px;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid #6cb869;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<h2>Drag and Drop</h2>
+<p>Drag the image back and forth between the two div elements.</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="108" height="131">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</body>
+</html>
+
+/* Entry - 17th March 2020 */
+
+<p style="font-family:optima;font-size:12px;">Things to Plan</p>
+   <p style="font-family:optima;font-size:12px;">Things I/m thinking about:</p>
    
 <ul style="list-style-type:circle;">
-  <li style="font-family:optima;font-size:12px;"> mkaing a documentary --- using people i knwo to read out the quotes </li>
+  <li style="font-family:optima;font-size:12px;"> making a documentary --- using people I know to read out the quotes that I've noted </li>
   </ul> 
   <ul style="list-style-type:circle;">
-  <li style="font-family:optima;font-size:12px;">understanding how didgital videos play how they buffer and load etc</li>
+  <li style="font-family:optima;font-size:12px;">Understanding how digital videos play how they buffer and load etc</li>
   </ul> 
   <ul style="list-style-type:circle;">
-  <li style="font-family:optima;font-size:12px;">still interested in lihgt and reflections</li>
+  <li style="font-family:optima;font-size:12px;">still interested in light and reflections</li>
 </ul>  
 <div>
+
 
    </div>
 </style>
