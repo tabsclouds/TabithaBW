@@ -73,6 +73,11 @@ a:active {
   background-color: #6cb869;
   color: #fff;
 }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 </style>
 <body>
 <div class="header">
@@ -88,14 +93,14 @@ a:active {
 <p style="font-family:optima"></p>
 
   <div>
- <div>
+ <div class=column >
 		  <img src="CharacAndOtherAndAReflection(still).png" alt="Charac and Other and a Reflection (still)" width="1000" height="300">
   </div>
 
-<div id="mydiv">
-  <div style="font-family:optima" id="mydivheader">Click here to move</div>
-  <div class="videoWrapper">
-<iframe src="https://player.vimeo.com/video/315662457" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<div class=column id="mydiv">
+  <div class=column style="font-family:optima" id="mydivheader">Click here to move</div>
+  <div class=column class="videoWrapper">
+<iframe class=column src="https://player.vimeo.com/video/315662457" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </div>
 </div>
 
