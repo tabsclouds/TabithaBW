@@ -7,6 +7,59 @@
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+ul2 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+  overflow: ;
+  background-color: ;
+}
+li2 {
+  float: left;
+  }
+
+li {
+  float: left;
+}
+
+li2 a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li2 a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+li2.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .btn {
   background-color: #6cb869;
   border: none;
@@ -118,6 +171,34 @@ function drop(ev) {
 <div class="header">
 <a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
 </div>
+
+<ul2>
+  <li2 class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">March</a>
+    <div class="dropdown-content">
+      <a href="#M1">Entry 1 17th</a>
+      <a href="#M2">Entry 2 18th</a>
+      <a href="#M3">Entry 3 18th</a>
+    </div>
+  </li2>
+  <li2 class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">April</a>
+    <div class="dropdown-content">
+      <a href="#">Entry 1</a>
+      <a href="#">Entry 2</a>
+      <a href="#">Entry 3</a>
+    </div>
+  </li2>
+  <li2 class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">May</a>
+    <div class="dropdown-content">
+      <a href="#">Entry 1</a>
+      <a href="#">Entry 2</a>
+      <a href="#">Entry 3</a>
+    </div>
+  </li2>
+</ul2>
+
 <div class="column left">
 <div class="row">
   <div class="leftcolumn">
@@ -128,7 +209,7 @@ function drop(ev) {
     
     
     <div class="card">
-    <p5 style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* 2nd Entry - 18th March 2020 */</p5>
+    <p5 id="M3"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* 2nd Entry - 18th March 2020 */</p5>
     
 <style>
 #mydiv {
@@ -212,7 +293,7 @@ function dragElement(elmnt) {
 
     
     <div class="card">
-       <p5 style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* 1st Entry - 18th March 2020 */</p5>
+       <p5 id="M2" style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* 1st Entry - 18th March 2020 */</p5>
        <p sstyle="font-family:optima;font-size:15px;"> Drag and drop Charac between the two boxes. </p>
 <p style="font-family:optima"> <a href="https://www.w3schools.com/html/html5_draganddrop.asp">https://www.w3schools.com/html/html5_draganddrop.asp</a> </p>
 
@@ -224,7 +305,7 @@ function dragElement(elmnt) {
         </div>
     </div>
     <div class="card">
-      <p5 style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* Entry - 17th March 2020 */</p5>
+      <p5 id="M1"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* Entry - 17th March 2020 */</p5>
 
 <p style="font-family:optima;font-size:15px;">Things to Plan</p>
    <p style="font-family:optima;font-size:15px;">Things I'm thinking about:</p>
