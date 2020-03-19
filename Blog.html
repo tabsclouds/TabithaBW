@@ -168,6 +168,17 @@ span.test2 {
 p.test2 {
   writing-mode: vertical-rl; 
 }
+div.enlarge {
+  width: 100px;
+  height: 100px;
+  background: #6cb869;
+  transition: width 2s, height 4s;
+}
+
+div.enlarge:hover {
+  width: 300px;
+  height: 300px;
+}
 </style>
 <script>
 function allowDrop(ev) {
@@ -198,6 +209,7 @@ function drop(ev) {
       <a href="#M2">Entry 2 18th 1st </a>
       <a href="#M3">Entry 3 18th 2nd </a>
       <a href="#M4">Entry 4 18th 3rd </a>
+      <a href="#M5">Entry 5 19th </a>
     </div>
   </li2>
   <li2 class="dropdown">
@@ -223,9 +235,23 @@ function drop(ev) {
   <div class="leftcolumn">
     <h2> &nbsp;&nbsp; Blog 2020</h2>
     
+    <div class="card">
+     <p5 id="M4"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* Entry - 19th March 2020 */</p5>
+     
+     <h1>The transition Property</h1>
+
+<p></p>
+
+<div class=enlarge ></div>
+
+<p><b></b> Hover over the div element below, to see the transition effect.</p>
+     
+     
+     </div>
+    
     
     <div class="card">
-     <p5 id="M4"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* 3rd Entry - 18th March 2020 */</p5>
+     <p5 id="M5"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* 3rd Entry - 18th March 2020 */</p5>
      <h1>The writing-mode Property</h1>
 
 <p class="test1">Some text with default writing-mode.</p>
