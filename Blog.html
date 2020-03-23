@@ -182,6 +182,7 @@ div.enlarge:hover {
   width: 300px;
   height: 300px;
 }
+/*entry 22nd march 2020*/
 #div7 {
   position: relative;
   height: 150px;
@@ -239,6 +240,23 @@ div.enlarge:hover {
   perspective: 100px;
   perspective-origin: -90%;  
 }
+/* entry 23rd march 2020*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  background-color: #6cb869;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+  width 100px;
+}
 </style>
 <script>
 function allowDrop(ev) {
@@ -274,6 +292,7 @@ function drop(ev) {
       <a href="#M7">Entry 7 21st 1st </a>
       <a href="#M8">Entry 8 21st 2nd </a>
       <a href="#M9">Entry 9 22nd </a>
+      <a href="#M10">Entry 10 23rd </a>
     </div>
   </li2>
   <li2 class="dropdown">
@@ -299,8 +318,48 @@ function drop(ev) {
   <div class="leftcolumn">
     <h2> &nbsp;&nbsp; Blog 2020</h2>
     
+     <div class="card">
+     <p5 id="M10"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* Entry - 23rd March 2020 */</p5>
+
+<h3 style="font-family:optima">The grid-auto-flow Property</h3>
+
+<p style="font-family:optima">The <em>grid-auto-flow</em> property controls how auto-placed items are inserted in the grid.</p>
+<p style="font-family:optima">This grid has three columns and two rows.</p>
+
+<h4 style="font-family:optima">grid-auto-flow: column</h4>
+<p style="font-family:optima">Insert items column by column:</p>
+<div class="grid-container" style="grid-auto-flow: column;">
+  <div style="font-family:optima" class="item1">Bunkers, Brutalism and Bloodymindedness: Concrete Poetry with Jonathan Meades
+</div>
+  <div style="font-family:optima" class="item2">[19:53]
+“Georges Braque said that art’s job is to trouble us, while science’s jobs is to reassure us. There are too many artists who want to be scientists.”
+</div>
+  <div  style="font-family:optima" class="item3">[20:58]
+“An artist creates what he regards as necessary. He creates in order to achieve something which did not previously exist.”
+</div>
+  <div style="font-family:optima" class="item4">[18:03]
+“It’s all as exhilaratingly impure as an oxymoron the centrifugal, simultaneously pulling in several directions. It’s what Max Ernst talked of his own work as being – a hallucinatory series of contradictory images. A series which refuses to be resolved into a single meaning. It’s a multiple monument which defies explanation.”
+</div>
+</div>
+
+<h4 style="font-family:optima">grid-auto-flow: row</h4>
+<p style="font-family:optima">Insert items row by row:</p>
+<div style="font-family:optima" class="grid-container" style="grid-auto-flow: row;">
+  <div style="font-family:optima" class="item1">Bunkers, Brutalism and Bloodymindedness: Concrete Poetry with Jonathan Meades</div>
+  <div style="font-family:optima" class="item2">[19:53]
+“Georges Braque said that art’s job is to trouble us, while science’s jobs is to reassure us. There are too many artists who want to be scientists.”</div>
+  <div style="font-family:optima" class="item3">[20:58]
+“An artist creates what he regards as necessary. He creates in order to achieve something which did not previously exist.”</div>
+  <div style="font-family:optima" class="item4">[18:03]
+“It’s all as exhilaratingly impure as an oxymoron the centrifugal, simultaneously pulling in several directions. It’s what Max Ernst talked of his own work as being – a hallucinatory series of contradictory images. A series which refuses to be resolved into a single meaning. It’s a multiple monument which defies explanation.”</div>
+</div>
+
+
+     
+     </div>
+    
          <div class="card">
-     <p5 id="M9"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* Entry - 22nd */</p5>
+     <p5 id="M9"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* Entry - 22nd March 2020 */</p5>
 <h3 style="font-family:optima">Chasing the Moon series 1: 6. Magnificent Desolation
 
 </h3>
