@@ -319,43 +319,11 @@ function drop(ev) {
     <div class="card">
      <p5 id="M12"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* 2nd Entry - 24th March 2020 */</p5>
      
-     <div style="text-align:left"> 
-  <button onclick="playPause()">Play/Pause</button> 
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-  <br><br>
-  <video id="video1" width="1280">
-    <source src="wiggly image light.mp4" type="video/mp4">
-    <source src="wiggly image light.ogg" type="video/ogg">
-    Your browser does not support HTML5 video.
-  </video>
-  
-</div> 
-
-<script> 
-var myVideo = document.getElementById("video1"); 
-
-function playPause() { 
-  if (myVideo.paused) 
-    myVideo.play(); 
-  else 
-    myVideo.pause(); 
-} 
-
-function makeBig() { 
-    myVideo.width = 1920; 
-} 
-
-function makeSmall() { 
-    myVideo.width = 640; 
-} 
-
-function makeNormal() { 
-    myVideo.width = 1280; 
-} 
-</script> 
-     
+<video width="640" height="360" autoplay>
+  <source src="wiggly image light.mp4" type="wiggly image light/mp4">
+  <source src="wiggly image light.ogg" type="wiggly image light/ogg">
+  Your browser does not support the video tag.
+</video>
      
      </div>
        
