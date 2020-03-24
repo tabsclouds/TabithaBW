@@ -293,7 +293,8 @@ function drop(ev) {
       <a href="#M8">Entry 8 21st 2nd </a>
       <a href="#M9">Entry 9 22nd </a>
       <a href="#M10">Entry 10 23rd </a>
-      <a href="#M11">Entry 11 24th </a>
+      <a href="#M11">Entry 11 24th 1st </a>
+      <a href="#M12">Entry 12 24th 2nd </a>
     </div>
   </li2>
   <li2 class="dropdown">
@@ -315,8 +316,51 @@ function drop(ev) {
   <div class="leftcolumn">
     <h2> &nbsp;&nbsp; Blog 2020</h2>
     
+    <div class="card">
+     <p5 id="M12"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* 2nd Entry - 24th March 2020 */</p5>
+     
+     <div style="text-align:left"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="wiggly image light.mp4" type="video/mp4">
+    <source src="wiggly image light.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+  
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+     
+     
+     </div>
+       
        <div class="card">
-     <p5 id="M11"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* Entry - 24th March 2020 */</p5>
+     <p5 id="M11"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* 1st Entry - 24th March 2020 */</p5>
      
      <h3 style="font-family:optima">Einstein’s Quantum Riddle</h3>
 
@@ -418,10 +462,6 @@ In a radical theory, known as the holographic universe, space and time are creat
         <div class="card">
      <p5 id="M7"style="font-family:optima;color:#6cb869;border: 2px solid #6cb869;">/* 1st Entry - 21st March 2020 */</p5>
 
-<!DOCTYPE html> 
-<html> 
-<body> 
-
 <div style="text-align:left"> 
   <button onclick="playPause()">Play/Pause</button> 
   <button onclick="makeBig()">Big</button>
@@ -462,10 +502,6 @@ function makeNormal() {
     myVideo.width = 420; 
 } 
 </script> 
-
-
-
-</body> 
      
      
      </div>
