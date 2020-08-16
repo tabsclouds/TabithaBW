@@ -86,7 +86,36 @@ a:active {
 p {
 	margin: 25px;
     }
+.accordion {
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  text-color: white;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
 
+.active, .accordion:hover {
+  background-color: ;
+}
+
+.panel {
+  padding: 0 0px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0s;
+  }
+  .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 </style>
 </head>
 <body style="background-color:#6cb869;">
@@ -137,18 +166,43 @@ p {
 
 
 
+<button class="accordion">
+<p style="font-family:optima;font-size:25px;color:white;">
+ Statement </p>
+        </button>
+<div class="panel">
+  <p style="font-family:optima"><a href="mailto:tabithabw5@gmail.com">tabithabw5@gmail.com</a> </p>
 
+<p style="font-family:optima"> My artistic practice explores how I perceive my physical interaction with digital/virtual images by creating videos that explore my visual experiences with digital and non-fixed images (e.g. reflections). My animations explore the cartoon-like experience of interacting with digital images through the actions of Charac and Other (my two cartoon characters), who treat the digital image as a cartoon object. Discussions with scientists regarding this topic have revealed that the scientific explanations of human-digital interaction do not fully encompass the immediate, instinctive human experience. My artistic methods promote an artistic, cartoon approach to investigating how I perceive digital images visually and physically.
+   </p>
+   
+   
+  
+</div>
 
 <p style="font-family:optima;font-size:25px">
-        <a href="Statement.html">Statement</a>
         <a href="ContactCV.html">Contact & CV</a>
     </p>
     
  
-  
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-  <style>
-</style>
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
 <body>
 
 <div class="footer">
