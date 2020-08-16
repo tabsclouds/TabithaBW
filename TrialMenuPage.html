@@ -31,7 +31,7 @@ li {
      padding: 5px;
   margin-bottom: 25px;
   background-color: transparent;
-  color: white;
+  color: #ffffff;
     
 }
 a {
@@ -56,33 +56,36 @@ img {
 li:nth-child img {
     background: white;
 }
-
+a:hover + img,
+img:hover {
+    display: block;
+}
+li:hover {
+  background-color:transparent;
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #9ace97;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;  
+}
 p {
 	margin: 25px;
     }
-.accordion {
-  background-color: transparent;
-  color: #000;
-  cursor: pointer;
-  padding: 5px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: ;
-}
-
-.panel {
-  padding: 0 5px;
-  background-color: transparent;
-  max-height: 0;
-  overflow: hidden;
-  transiti
 
 </style>
 </head>
@@ -91,74 +94,32 @@ p {
 <div class="header">
 
 <ul>
- <button class="accordion">
- <li style="font-family:optima;font-size:25px">
- Charac and Other and Light Inside the Body [2020]</li>
-		</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-
-
-     <button class="accordion">   
   <li style="font-family:optima;font-size:25px">
-        Untitled Ongoing [2020]</li>
-        </button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
+        <a href="CharacOtherLightInsideTheBody.html
+">Charac and Other and Light Inside the Body [2020]
+</a> <img src="Charac_eating_the_sun.png" alt="">
 
-
-
-      <button class="accordion">          
+        
   <li style="font-family:optima;font-size:25px">
-        spooky action at a distance [2020]</li>
-        </button>
-<div class="panel">
-<div class=column >
-		   <img src="spooky_action_at_a_distance (still).png" alt="spooky action at a distance (still)" width="1000" height="300">
-  </div>
-
-<div id="mydiv">
-  <div style="font-family:optima" id="mydivheader">&nbsp</div>
-  <div  class="videoWrapper">
-<iframe  src="https://player.vimeo.com/video/402616644" width="800" height="450" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-  </div>
-  <p>TEXT</p>
-</div>
-</div>
-
-
-
-  <button class="accordion">   
+        <a href="UntitledOngoing.html">Untitled Ongoing [2020]</a> <img src="after claude cahun (best) 2 at trethevy quoit common moor CROP.jpg" alt="">
+                
+  <li style="font-family:optima;font-size:25px">
+        <a href="SpookyActionAtADistance.html">spooky action at a distance [2020]</a>
+        <img src="spooky_action_at_a_distance (still).png" alt="">
+<p></p>
     <li style="font-family:optima;font-size:25px">
-       An exploration of how to hold and touch digital images. [2018-2019]</li>
-       </button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-    
-    
-    
-    <button class="accordion"> 
-    <li style="font-family:optima;font-size:25px"> Cat and Information [January 2019 – April 2019]</li>
-    </button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-    
-    
-    
+        <a href="ExplorationHowToHoldDigitalImages.html">An exploration of how to hold and touch digital images. [2018-2019]</a>
+        <img src="Final Degree Show Installation Camberwell 035.jpg
+" alt="">
+    </li>
     <li style="font-family:optima;font-size:25px">
-      Charac and Other and a Reflection [2018-2019]</li>
-    </button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-    
-    
-    
+        <a href="CatAndInformation.html">Cat and Information [January 2019 – April 2019]</a>
+        <img src="CatAndInformation(still).png" alt="">
+    </li>
+    <li style="font-family:optima;font-size:25px">
+        <a href="CharacAndOtherAndAReflection.html">Charac and Other and a Reflection [2018-2019]</a>
+        <img src="CharacAndOtherAndAReflection(still).png" alt="">
+    </li>
      <li style="font-family:optima;font-size:25px">
         <a href="CharacOtherSeeingNonVisual.html">Charac and Other explore seeing the non-visual. [2018-2019]</a>
         <img src="Charac and Other explore seeing the non-visual.(still).png" alt="">
@@ -184,24 +145,10 @@ p {
     </p>
     
  
- 
+  
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+  <style>
+</style>
 <body>
 
 <div class="footer">
