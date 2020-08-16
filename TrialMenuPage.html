@@ -75,6 +75,24 @@ p {
   overflow: hidden;
   transition: 0s;
   }
+  .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+  }
 
 </style>
 </head>
@@ -98,7 +116,39 @@ p {
         Untitled Ongoing [2020]</li>
         </button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="row">
+  <div class="column">
+    <img src="after claude cahun (best) 2 at trethevy quoit common moor.jpg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="after claude cahun (best) 3 at trethevy quoit common moor.jpg" alt="" style="width:100%">
+  </div>
+</div>
+
+<div>
+
+<video width="600" controls>
+  <source src="Trethevy Quoit common moor sunlight video.mp4" type="video/mp4">
+  <source src="Trethevy Quoit common moor sunlight video.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<video width="600" controls>
+  <source src="Shadow Field Grass Wind.mp4" type="video/mp4">
+  <source src="Shadow Field Grass Wind.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="King Arthurs Hall Shadow being rock.jpg" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="King Arthurs Hall Shadow mimick rock.jpg" alt="" style="width:100%">
+  </div>
+</div>
 </div>
 
 
@@ -208,7 +258,7 @@ p {
         Contact & CV</li>
     </button>
 <div class="panel">
-  <div class="column left">
+  <div>
 <p style="font-family:optima"> Tabitha Beresford-Webb </p>
 <p style="font-family:optima"> Born 1996, UK </p>
 <p style="font-family:optima"> Based in London</p>
@@ -216,7 +266,7 @@ p {
 <p style="font-family:optima"> <a href="https://vimeo.com/tabithabw">Vimeo profile</a> &emsp; <a href="https://www.instagram.com/tabsclouds/">@tabsclouds</a> &emsp; <a href="https://www.instagram.com/characandother/">@CharacAndOther</a></p>
    
  </div> 
- <div class="column right">
+ <div>
  <h2 style="font-family:optima">&nbsp</h2>
 <h3 style="font-family:optima">Education</h3>
 <ul style="list-style-type:circle;">
