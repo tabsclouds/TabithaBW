@@ -53,17 +53,14 @@ a:active {
 * {
   box-sizing: border-box;
 }
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
+.row {
+  display: flex;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -88,10 +85,11 @@ a:active {
       
 <div class="row">
   <div class="column">
-    <img src="after claude cahun (best) 2 at trethevy quoit common moor.jpg" alt="" style="width:600px">
+    <img src="after claude cahun (best) 2 at trethevy quoit common moor.jpg" alt="" style="width:100%">
   </div>
+
   <div class="column">
-    <img src="after claude cahun (best) 3 at trethevy quoit common moor.jpg" alt="" style="width:600px">
+    <img src="after claude cahun (best) 3 at trethevy quoit common moor.jpg" alt="" style="width:100%">
   </div>
 </div>
 
