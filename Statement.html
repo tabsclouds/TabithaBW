@@ -60,29 +60,28 @@ a:active {
 * {
   box-sizing: border-box;
 }
-/* Create two equal columns that floats next to each other */
+
+/* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  width: 60%;
-  padding-left: 200px;
+  padding: 10px;
+  
 }
-.left {
-  width: 80%;
+
+.left, .right {
+  width: 25%;
 }
-.right {
-  width: 35%;
+
+.middle {
+  width: 50%;
 }
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
 
 </style>
 
@@ -96,6 +95,9 @@ a:active {
 </div>
 
 <div class="column left">
+</div>
+
+<div class="column middle">
     <h2 style="font-family:optima;color:white;">Statement</h2>
     <p style="font-family:optima;color:white;"> Tabitha Beresford-Webb <a href="mailto:tabithabw5@gmail.com">tabithabw5@gmail.com</a> </p>
 
@@ -113,10 +115,11 @@ Inspired by my research, I create animations in which I combine the silliness, p
    </p>
    
  </div> 
+ 
+ <div class="column right">
+</div>
 
 
-</style>
-</head>
 <body>
 
 <div class="footer">
