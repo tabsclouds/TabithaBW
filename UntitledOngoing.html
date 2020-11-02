@@ -53,24 +53,36 @@ a:active {
 * {
   box-sizing: border-box;
 }
+/* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
   padding: 5px;
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+/* Left column */
+.column.left {
+  width: 40%;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
+/* Right column */
+.column.right {
+  width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column.left, .column.right {   
     width: 100%;
+    padding: 0;
   }
+}
   video {
   width: 100%;
   height: auto;
@@ -88,8 +100,13 @@ a:active {
 
 </div>
 
+ <div class="column left">
 
-<h2 style="font-family:optima;color:white;">&nbsp Untitled Ongoing [2020]</h2>
+<p style="font-family:optima;color:white;font-size:25px">&nbsp Untitled Ongoing [2020]</p>
+
+</div>
+      
+  <div class="column right">     
       
 <div class="row">
   <div class="column">
@@ -103,8 +120,8 @@ a:active {
 
 <div>
 
- <h4 style="font-family:optima;color:white;">Megalithic Granite - I extend my arms - 
-after Claude Cahun (1931 or 1932)</h4>
+ <p style="font-family:optima;color:white;">Megalithic Granite - I extend my arms - 
+after Claude Cahun (1931 or 1932)</p>
 
 </div>
 
@@ -116,7 +133,7 @@ after Claude Cahun (1931 or 1932)</h4>
 
 <div>
 
- <h4 style="font-family:optima;color:white;">Grandad, Split boulder, Torridon, Ross and Cromarty, near to Stùc a' Choire Dhuibh Bhig, Highland, Scotland, 1979 -- after Dennis Oppenheim Parallel Stress 1970 -- before Carey Young Body Techniques (after Parallel Stress, Dennis Oppenheim, 1970) 2007</h4>
+ <p style="font-family:optima;color:white;">Grandad, Split boulder, Torridon, Ross and Cromarty, near to Stùc a' Choire Dhuibh Bhig, Highland, Scotland, 1979 -- after Dennis Oppenheim Parallel Stress 1970 -- before Carey Young Body Techniques (after Parallel Stress, Dennis Oppenheim, 1970) 2007</p>
 
 </div>
 
@@ -139,7 +156,7 @@ after Claude Cahun (1931 or 1932)</h4>
 
 <div>
 
- <h4 style="font-family:optima;color:white;">Sunlight through Trethevy Quoit (Cornish: Koyt Tredhewi), megalithic tomb, between St Cleer and Darite, Cornwall ----- Shadow, Sunlight, Wind, Grass, Field near Killigarth, Looe, Cornwall </h4>
+ <p style="font-family:optima;color:white;">Sunlight through Trethevy Quoit (Cornish: Koyt Tredhewi), megalithic tomb, between St Cleer and Darite, Cornwall ----- Shadow, Sunlight, Wind, Grass, Field near Killigarth, Looe, Cornwall </p>
 
 </div>
 
@@ -153,9 +170,9 @@ after Claude Cahun (1931 or 1932)</h4>
 </div>
 
 
- <h4 style="font-family:optima;color:white;">Shadow being megalithic granite, King Arthur's Hall, Bodmin Moor, Cornwall ----- Shadow mimicking megalithic granite, King Arthur's Hall, Bodmin Moor, Cornwall  </h4>
+ <p style="font-family:optima;color:white;">Shadow being megalithic granite, King Arthur's Hall, Bodmin Moor, Cornwall ----- Shadow mimicking megalithic granite, King Arthur's Hall, Bodmin Moor, Cornwall  </p>
 
-
+</div>
 
 </body>
 
