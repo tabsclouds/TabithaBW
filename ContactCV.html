@@ -53,19 +53,22 @@ a:active {
 * {
   box-sizing: border-box;
 }
-/* Create two equal columns that floats next to each other */
+/* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 5px;
 }
-.left {
+
+/* Left column */
+.column.left {
   width: 30%;
 }
-.right {
+
+/* Right column */
+.column.right {
   width: 70%;
 }
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -104,7 +107,7 @@ object{
 <p style="font-family:optima"> <a href="https://vimeo.com/tabithabw">Vimeo profile</a> &emsp; <a href="https://www.instagram.com/tabsclouds/">@tabsclouds</a> &emsp; <a href="https://www.instagram.com/tabsresearch/">@tabsresearch</a></p>
 
 
-<object data="IMG_0390.JPG" width="" height=""></object>
+<object data="IMG_3395_crop.jpg" width="" height=""></object>
    
  </div> 
  
